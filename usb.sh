@@ -85,7 +85,7 @@ ui_final() {
         dialog --backtitle "$backtitle" --colors --title "Done" --ok-label "Exit" --msgbox "Everything has been installed and set up succesfully! Have fun!" 5 70
         dialog --backtitle "$backtitle" --colors --title "Final Step" --yesno "Do you want to run mysql_secure_installation now?" 5 70
     else
-        dialog --backtitle "$backtitle" --colors --title "Done" --ok-label "Exit" --msgbox "Installation has finnished but with some failiures, log can be found at $(pwd)/usb.log!" 10 70
+        dialog --backtitle "$backtitle" --colors --title "Done" --ok-label "Exit" --msgbox "Installation has finished but with some failures, log can be found at $(pwd)/usb.log!" 10 70
         dialog --backtitle "$backtitle" --colors --title "Final Step" --yesno "Do you want to run mysql_secure_installation now?" 5 70
     fi
 
